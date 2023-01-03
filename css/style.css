@@ -1,0 +1,63 @@
+:root
+{
+/*  primary colours   */
+--moderate_violet: hsl(263, 55%, 52%);
+--very_dark_grayish_blue: hsl(217, 19%, 35%);
+--very_dark_blackish_blue: hsl(219, 29%, 14%);
+--white: hsl(0, 0%, 100%);
+
+/*  neutral colours  */
+--light_gray: hsl(0, 0%, 81%);
+--light_grayish_blue: hsl(210, 46%, 95%);
+}
+
+body
+{
+    background-color:var(--light_grayish_blue);
+    display: flex;
+    min-height: 100vh;
+    margin: 2rem;
+}
+
+main
+{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "lt lt mt r"
+    "lb mb mb r"
+    ;
+    gap:2em;
+}
+
+.testimonyCard
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.testimonyCard--violet{
+    background-color:var(--moderate_violet);
+    grid-area: lt;
+}
+
+.testimonyCard--very_dark_blackish_blue{
+    background-color:var(--very_dark_blackish_blue);
+    grid-area: mb;
+
+}
+
+.testimonyCard--very_dark_grayish_blue{
+    background-color:var(--very_dark_grayish_blue);
+}
+
+
+.testimonyCard--lateral{
+    background-color:var(--white);
+    grid-area: r;
+
+}
+
