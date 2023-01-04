@@ -46,6 +46,7 @@ body
 .testimonyCard__profile
 {
     display: flex;
+    align-items: center;
     z-index: 1;
 }
 .testimonyCard__rol
@@ -56,6 +57,7 @@ body
 .testimonyCard__picture
  {
     max-inline-size: 30px;
+    block-size: auto;
     border-radius: 16px;
     border: 2px solid hsla(263, 55%, 52%, 0.472);
     margin-inline-end: 1rem;
